@@ -19,6 +19,7 @@ num = 12;
 num2 = 1.2;
 boolValue = true;
 character = "Q";
+nullValue = NULL;
 
 << 型注釈など
 
@@ -27,12 +28,17 @@ num3 : integer = 12;
 char2 : char = "Q";
 num4 : double = 1.2;
 boolean : bool = false;
+null2 : null = NULL;
 
 << 定数
 
-@const constant = "aaa";
+@final constant = "aaa";
 
 << 複数宣言
 
 num5 & str = 12 & "aiu"; <<　または num5 & num6 = 12;
 
+<<　配列
+
+array = [12, 23, 34];
+array.add(3, 45);
