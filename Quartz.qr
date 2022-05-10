@@ -1,44 +1,23 @@
-<< こんちは
+@Encodes<"UTF-8">;
+
 </
-    ここにコードを書く予定。
-    決定事項👇
-    ・これがコメント
-    ・エンコードは@encode<"エンコード名">;
-    ・出力はout("文字列");
+    変数宣言
+    prep 変数名#型名 >> 数値;
 />
 
-<<　エンコード
-@encode<"UTF-8">;
+prep number #int >> 12;
 
-<< 表示
-out("Hello Quartz");
+prep hoge #string >> "hogehoge";
 
-<< 変数
-hoge = "hogehoge";
-num = 12;
-num2 = 1.2;
-boolValue = true;
-character = "Q";
-nullValue = NULL;
+prep doubleValue >> 3.3; << 型を省略可能(#double)
 
-<< 型注釈など
+prep character #char >> "Q";
 
-hoge2 : string = "hogehoge";
-num3 : integer = 12;
-char2 : char = "Q";
-num4 : double = 1.2;
-boolean : bool = false;
-null2 : null = NULL;
+prep flag #bool >> TRUE; << FALSEとセット
 
-<< 定数
+prep nothing #null >> NULL;
 
-@final constant = "aaa";
-
-<< 複数宣言
-
-num5 & str = 12 & "aiu"; <<　または num5 & num6 = 12;
-
-<<　配列
-
-array = [12, 23, 34];
-array.add(3, 45);
+</
+    定数
+    @Final prep#型名 >> 数値;
+/>
