@@ -7,6 +7,32 @@
     ・出力はout("文字列");
 />
 
+<<　エンコード
 @encode<"UTF-8">;
 
-out("Hello World");
+<< 表示
+out("Hello Quartz");
+
+<< 変数
+hoge = "hogehoge";
+num = 12;
+num2 = 1.2;
+boolValue = true;
+character = "Q";
+
+<< 型注釈など
+
+hoge2 : string = "hogehoge";
+num3 : integer = 12;
+char2 : char = "Q";
+num4 : double = 1.2;
+boolean : bool = false;
+
+<< 定数
+
+@const constant = "aaa";
+
+<< 複数宣言
+
+num5 & str = 12 & "aiu"; <<　または num5 & num6 = 12;
+
