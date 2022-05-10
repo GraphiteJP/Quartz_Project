@@ -1,3 +1,3 @@
 # Quartz_Project
 
-> ## What Is _Quartz_?
+> ## What Is *Quartz*?
